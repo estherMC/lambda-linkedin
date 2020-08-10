@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="01_01/Lambdas_01_01/src"/>
+	<classpathentry kind="src" path="01_02/Lambdas_01_02/src"/>
+	<classpathentry kind="src" path="01_03/Lambdas_01_03/src"/>
+	<classpathentry kind="src" path="01_04/Lambdas_01_04/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="01_01/Lambdas_01_01/build/classes"/>
+</classpath>
