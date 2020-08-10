@@ -24,15 +24,15 @@ public class LambdaEventHandler extends Application {
         Button btn = new Button();
         btn.setText("Say 'Hello World'");
         //inner class
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
+//        btn.setOnAction(new EventHandler<ActionEvent>() {
+//            
+//            @Override
+//            public void handle(ActionEvent event) {
+//                System.out.println("Hello World!");
+//            }
+//        });
         
-        // btn.setOnAction( event -> System.out.println("Hello World!"));
+         btn.setOnAction( event -> System.out.println("Hello World!"));
         
         /* code for EventHandler Interface: 
            public interface ActionListener extends EventListener {   

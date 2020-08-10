@@ -44,7 +44,7 @@ public class Lambdas_01_02 {
             hello.accept(name);
         }
         
-        //example of passing one value 
+        //example of passing one value - GreetingFunction -> functional interface creada por nosotros
          GreetingFunction greeting = message ->
             System.out.println("Java Programming " + message);
          greeting.sayMessage("Rocks with lambda expressions");
