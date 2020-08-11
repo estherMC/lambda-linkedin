@@ -40,6 +40,7 @@ public class Lambdas_02_01 {
         
         //now remove the data types and allow the compile to infer the type
         Collections.sort(names, (a, b) -> b.compareTo(a));
+        System.out.println("Listado names ordenado invertido:" + names);
 
    
         //total pages in your book collection
@@ -51,6 +52,8 @@ public class Lambdas_02_01 {
                 "Dr", "Seuss", 45);
         
         List<Book> books = Arrays.asList(book1, book2, book3);
+        //El siguiente ejemplo, summingInt, suma la función lambda de dentro, en este caso, se recupera de cada Book
+        //el getPages y se acumula en la variable "total".
         int total = books.stream()
                 .collect(Collectors.summingInt(Book::getPages));
         System.out.println(total);
@@ -60,12 +63,14 @@ public class Lambdas_02_01 {
         System.out.println("Before removing duplicates: ");
         System.out.println(dupBooks.toString());
         
+        //Del listado anterior (que contiene duplicados), crea un HashSet que no acepta duplicados
         Collection<Book> noDups = new HashSet<>(dupBooks);
         System.out.println("After removing duplicates: ");
         System.out.println(noDups.toString());
 
 
         //aggregate author first names into a list
+        //Del listado de books recupera el autor y genera un listado con esta info.
         List<String> list = books.stream()
                 .map(Book::getAuthorLName)
                 .collect(Collectors.toList());
