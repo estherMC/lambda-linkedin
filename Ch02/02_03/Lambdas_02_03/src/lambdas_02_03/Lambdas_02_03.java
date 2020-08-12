@@ -28,7 +28,7 @@ public class Lambdas_02_03 {
                 .average()
                 .ifPresent(System.out::println);
 
-        //map doubles to ints
+        //map doubles to ints (trunca los decimales)
         Stream.of(1.5, 2.3, 3.7)
                 .mapToInt(Double::intValue)
                 .forEach(System.out::println);
